@@ -41,10 +41,9 @@ function createRock(x) {
   GAME.appendChild(rock)
  
   function moveRock() {
-    debugger
     rock.style.top = `${top += 2}px`
     
-      if (checkCollision() === true) {
+      if (checkCollision(rock) === true) {
       endGame()
       }
       if (top < 400) {
