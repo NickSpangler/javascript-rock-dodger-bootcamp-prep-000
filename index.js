@@ -39,7 +39,7 @@ function createRock(x) {
   rock.style.top = top
   
   GAME.appendChild(rock)
-  
+  debugger
   function moveRock() {
     rock.style.top = `${top += 2}px`
     
