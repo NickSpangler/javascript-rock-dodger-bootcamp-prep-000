@@ -103,7 +103,7 @@ function moveDodgerRight() {
   var right = left + 40
  
   if (right <= 396) {
-     window.requestAnimationFrame(moveDodgerRight)
+     window.requestAnimationFrame(dodger.style.left = `${left + 4}px`)
      dodger.style.left = `${left + 4}px`
   }
 }
