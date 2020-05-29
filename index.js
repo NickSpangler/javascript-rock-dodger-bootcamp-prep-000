@@ -76,7 +76,7 @@ function endGame() {
 function moveDodger(e) {
   const playerInput = e.which
   
-  if (playerInput !== LEFT_ARROW || RIGHT_ARROW) {
+  if (playerInput !== LEFT_ARROW || playerInput !== RIGHT_ARROW) {
     e.preventDefault()
     e.stopPropagation()
   }
