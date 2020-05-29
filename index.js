@@ -86,7 +86,7 @@ function moveDodger(e) {
   if (e.which === RIGHT_ARROW) {
     moveDodgerRight()
 }
-
+}
 function moveDodgerLeft() {
   window.requestAnimationFrame(moveDodgerLeft)
   var leftNumbers = dodger.style.left.replace('px', '')
