@@ -74,18 +74,18 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  const playerInput = e.which
+  
+  if (playerInput !== LEFT_ARROW || RIGHT_ARROW){
     e.preventDefault()
     e.stopPropagation()
-  document.addEventListener('keydown', function(e) {
+  }
     if (e.which === LEFT_ARROW) {
       moveDodgerLeft()
     }
-  })
-  document.addEventListener('keydown', function(e) {
+  }
   if (e.which === RIGHT_ARROW) {
     moveDodgerRight()
-    }
-  })
 }
 
 function moveDodgerLeft() {
