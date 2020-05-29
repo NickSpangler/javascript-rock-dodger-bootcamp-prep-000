@@ -98,13 +98,13 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  window.requestAnimationFrame(moveDodgerRight)
   var leftNumbers = dodger.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
   var right = left + 40
  
   if (right <= 396) {
-    dodger.style.left = `${left + 4}px`
+     window.requestAnimationFrame(moveDodgerRight)
+     dodger.style.left = `${left + 4}px`
   }
 }
 
